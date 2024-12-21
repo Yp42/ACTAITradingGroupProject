@@ -1,0 +1,31 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic} using the Yahoo Finance News tool.
+    Make sure you find any interesting and relevant information given
+    the current year is 2024.
+  expected_output: >
+    A list of bullet points containing the most relevant information about {topic}.
+  agent: researcher
+
+accounting_task:
+  description: >
+    Review the information you got and then calculate all relevant financial information for {topic}.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A list containing all necessary financial information about {topic}.
+  agent: accountant
+
+recommending_task:
+  description: >
+    Using all information provided, make a decision on whether to buy, sell or hold {topic}.
+    Explain your decision using the information provided.
+  expected_output: >
+    A recommendation on whether to buy, sell or hold {topic}.
+  agent: recommender
+
+reporting_task:
+  description: >
+    Format the decision of the recommender nicely.
+  expected_output: >
+    Bullet points outlining the decision made by the recommender.
+  agent: blogger
