@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Selector</title>
+    <link rel="stylesheet" href="cssCode.css">
+</head>
+<body class="container">
+    <header>Client Management</header>
+    <h1>Asset Selection Report</h1>
+    <div class="page-selects">
+        <label for="typeSelect">Select Asset Type:</label>
+        <select id="typeSelect">
+            <option value="">Select Asset Type</option>
+            <option value="stocks">Stocks</option>
+            <option value="crypto">Crypto</option>
+        </select>
+        <label for="stockTypeSelect" id="stockLabel" style="display: none;">Select Stock:</label>
+        <select id="stockTypeSelect" style="display: none;">
+            <option value="">Select a Stock</option>
+        </select>
+        <label for="cryptoTypeSelect" id="cryptoLabel" style="display: none;">Select Crypto:</label>
+        <select id="cryptoTypeSelect" style="display: none;">
+            <option value="">Select a Crypto</option>
+        </select>
+    </div>
+    <p id="assetMessage"></p>
+    <footer>
+        <p>&copy; 2024 Fund Manager Website. All rights reserved.</p>
+    </footer>   
+    <script type="module" src="main.js"></script>
+</body>
+</html>

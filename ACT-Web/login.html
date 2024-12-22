@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cssCode.css">
+  <title>Fund Manager Login</title> 
+</head>
+<body class="login-page">
+  <header>
+    <h1>Fund Manager Login</h1>
+    <p class="tagline">Manage your clients and transactions seamlessly</p>
+  </header>
+  <div class="loginContainer">
+    <form id="loginForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your Name" required><br>
+        <label for="login-email">Email:</label><br>
+        <input type="email" id="login-email" placeholder="Enter your email" required><br>
+        <label for="login-password">Password:</label><br>
+        <input type="password" id="login-password" placeholder="Enter your password" required><br>
+        <button type="submit" class="btn-primary">Login</button>
+    </form>
+  </div>
+  <div class="loginContainer">
+    <button id="loginGoogle" class="btn-primary">Login with Google</button>
+    <p id="statusMessage"></p>
+  </div>
+  <div id="loginModal" class="modal"></div>
+  <div class="loginContainer">
+    <p>Don't have an account?<a href="registration.html" class="btn-primary">Register here</a></p>
+  </div>
+  <footer>
+    <p>&copy; 2024 Fund Manager Website. All rights reserved.</p>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

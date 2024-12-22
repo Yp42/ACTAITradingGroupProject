@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    grid-column: span 3;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d40d24;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+header .tagline {
+    font-size: 20px;
+    font-style: italic;
+    color: #ddd;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a.btn-primary {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.btn-primary:hover {
+    background-color: #a81b02;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    grid-column: span 3;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+footer a {
+    color: #d40d24;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.loginContainer{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.login-page body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.login-page header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #d40d24;
+    width: 100%;
+}
+
+.login-page header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.login-page header .tagline {
+    font-size: 25px;
+    font-style: italic;
+    color: #ddd;
+}
+
+.login-page .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.login-page .container p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.login-page a.btn-primary {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-page a.btn-primary:hover {
+    background-color: #a81b02;
+}
+
+.login-page footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.login-page footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.login-page footer a {
+    color: #d40d24;
+    text-decoration: none;
+}
+
+.login-page footer a:hover {
+    text-decoration: underline;
+}
+
+.loginContainer, footer , #loginGoogle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    max-height: 40px;
+    margin: 10px auto;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a81b02;
+}
+
+button:focus {
+    outline: none;
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    max-height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.displayInformation {
+    display: block;
+    background-color: #eaeaea;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.page-selects label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.page-selects select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.page-selects label[style="display: none;"],
+.page-selects select[style="display: none;"] {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+    resize: vertical;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+#centre div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.containerAddClient {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 15px 0 15px 40px;
+    padding: 0;
+}
+
+li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}

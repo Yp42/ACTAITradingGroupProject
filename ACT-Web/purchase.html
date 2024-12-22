@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Purchase with PayPal</title>
+  <link rel="stylesheet" href="cssCode.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=AY1d0u_iESDdYU33W_iyojkoT_4hOYppjjhtmBDgeNymLJRwm8MZZOF9i3R90HNtzXqoLszOiIwuS12c&components=buttons"></script></head>
+<body class="container">
+  <header>Client Management</header>
+  <form id="purchaseForm">
+    <label for="clientSelect">Select Client:</label>
+    <select id="clientSelect">
+      <option value="">Select a client</option>
+    </select>
+    <label for="assetType">Asset Type:</label>
+    <select id="assetType">
+      <option value="">Select asset type</option>
+      <option value="stocks">Stocks</option>
+      <option value="crypto">Crypto</option>
+    </select>
+    <label for="assetName">Asset Name:</label>
+    <select id="assetName">
+      <optgroup label="Shares" class="shares-options">
+      </optgroup>
+      <optgroup label="Crypto" class="crypto-options">
+      </optgroup>
+    </select>
+    <label for="assetPrice">Asset Price (€):</label>
+    <input type="number" id="assetPrice" placeholder="Price will auto-fill" readonly required>
+    <label for="assetQuantity">Quantity:</label>
+    <input type="number" id="assetQuantity" placeholder="Enter quantity" required>
+  </form>
+  <button id="randomAssetButton">Get Random Asset</button>
+  <p id="result"></p>
+  <div id="paypal-button-container"></div>
+  <p id="purchaseStatus"></p>
+  <footer>
+    <p>&copy; 2024 Fund Manager Website. All rights reserved.</p>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

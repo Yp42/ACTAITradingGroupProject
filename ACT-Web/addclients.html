@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Client</title>
+    <link rel="stylesheet" href="cssCode.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body class="container">
+    <header>Client Management</header>
+    <div>
+    <h2>Add a new client</h2>
+    <form id="managerform">
+        <input type="text" id="managercompanies" placeholder="Company name" required><br>
+        <input type="text" id="contactnumber" placeholder="Company phone number" required><br>
+        <input type="email" id="email" placeholder="Company email" required><br>
+        <input type="password" id="password" placeholder="client password" required><br>
+        <button type="submit" id="addclientbutton">Add Client</button><br>
+    </form>
+    </div>
+    <div>
+    <h2>Add an existing client</h2>
+    <select id="clientType" required>
+        <option value="" disabled selected>Select Client</option>
+    </select>
+    <div id="clientCredentials" style="display: none;">
+        <label for="email">Email:</label><br>
+        <input type="email" id="emailuser" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="passworduser" name="password" required><br>
+        <button id="verifyClient" type="button">Verify Client</button><br>
+    </div>
+    </div>
+   <p id="statusMessage"></p>
+    <p id="message"></p>
+    <footer>
+        <p>&copy; 2024 Fund Manager Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
