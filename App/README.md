@@ -1,2 +1,1 @@
-"# GroupProjectApp" 
-"# GroupProjectApp" 
+# GroupProjectApp
