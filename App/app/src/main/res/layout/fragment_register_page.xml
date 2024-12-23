@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround_main"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".RegisterPage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/iconAccountCircle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/icon_account_circle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-50dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:hint="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounder_corner"
+        android:inputType="text"
+        android:padding="12dp"
+        android:id="@+id/name_input" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounder_corner"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:id="@+id/email_input" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/rounder_corner"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:id="@+id/password_input" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#46DFFF"
+        android:layout_marginTop="345dp"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:id="@+id/register_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:layout_marginTop="432dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_text" />
+</RelativeLayout>

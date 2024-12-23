@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround_main"
+    tools:context=".stockInfoPage">
+
+    <!-- Text box for Stock Info -->
+    <TextView
+        android:id="@+id/rating_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="40dp"
+        android:inputType="numberDecimal"
+        android:hint="Name : "
+        android:textSize="50sp"
+        android:maxLines="1"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Market Price Text -->
+
+    <TextView
+        android:id="@+id/stock_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="start"
+        android:text="The Bottom Line. Solana is a blockchain whose purpose, use cases, and capabilities rival (and possibly exceed) that of Ethereum. It is one of the more popular blockchains, and its token, SOL, commands a decent share of the cryptocurrency market."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rating_text" />
+    <TextView
+        android:id="@+id/text_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="32dp"
+        android:text="Balance : "
+        android:textSize="18sp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/rating_text"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="32dp"
+        android:text="Current market Price :"
+        android:textSize="18sp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/rating_text"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Amount Input Text Area -->
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/market_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Buy and Sell Buttons -->
+    <LinearLayout
+        android:id="@+id/transaction_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/amount_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buy"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sell"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Button bar remains the same -->
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

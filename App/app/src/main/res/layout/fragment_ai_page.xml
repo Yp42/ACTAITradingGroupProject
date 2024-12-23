@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround_main"
+    tools:context=".AiPage">
+
+    <!-- Text box for user input -->
+    <EditText
+        android:id="@+id/input_text_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter your prompt"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@+id/rating_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button for prompt response -->
+    <Button
+        android:id="@+id/btn_prompt_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#46DFFF"
+        android:text="Prompt Response"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/input_text_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView for displaying large paragraphs -->
+    <TextView
+        android:id="@+id/large_paragraph_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:background="#EFEFEF"
+        android:text="Response will appear here..."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="start|top"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_prompt_response"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_bar" />
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#46DFFF"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/button_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Button bar remains the same -->
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_ai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AI"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_invest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Invest"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btn_alert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Alert"
+            android:textSize="10sp"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Help"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/btn_ratings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rate"
+            android:backgroundTint="#46DFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

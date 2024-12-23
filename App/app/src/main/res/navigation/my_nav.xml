@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginPage">
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.groupprojectapp2.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_registerPage"
+            app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_loginPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_loginPage_to_profileTestPage"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.example.groupprojectapp2.RegisterPage"
+        android:label="fragment_register_page"
+        tools:layout="@layout/fragment_register_page" >
+        <action
+            android:id="@+id/action_registerPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_registerPage_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/cryptoPage"
+        android:name="com.example.groupprojectapp2.CryptoPage"
+        android:label="fragment_crypto_page"
+        tools:layout="@layout/fragment_crypto_page" >
+        <action
+            android:id="@+id/action_cryptoPage_to_ratePage"
+            app:destination="@id/ratePage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_alertPage2"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_profilePage"
+            app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_stockInfoPage"
+            app:destination="@id/stockInfoPage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_allAssetsPage2"
+            app:destination="@id/allAssetsPage" />
+        <action
+            android:id="@+id/action_cryptoPage_to_profileTestPage"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpPage"
+        android:name="com.example.groupprojectapp2.HelpPage"
+        android:label="fragment_help_page"
+        tools:layout="@layout/fragment_help_page" >
+        <action
+            android:id="@+id/action_helpPage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_helpPage_to_alertPage"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_helpPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_helpPage_to_ratePage"
+            app:destination="@id/ratePage" />
+        <action
+            android:id="@+id/action_helpPage_to_profilePage"
+            app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_helpPage_to_profileTestPage2"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/ratePage"
+        android:name="com.example.groupprojectapp2.RatePage"
+        android:label="fragment_rate_page"
+        tools:layout="@layout/fragment_rate_page" >
+        <action
+            android:id="@+id/action_ratePage_to_cryptoPage2"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_ratePage_to_stocksPage"
+            app:destination="@id/stocksPage" />
+        <action
+            android:id="@+id/action_ratePage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_ratePage_to_aiPage2"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_ratePage_to_alertPage"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_ratePage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_ratePage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_ratePage_to_profilePage"
+            app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_ratePage_to_profileTestPage2"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/stocksPage"
+        android:name="com.example.groupprojectapp2.StocksPage"
+        android:label="fragment_stocks_page"
+        tools:layout="@layout/fragment_stocks_page" >
+        <action
+            android:id="@+id/action_stocksPage_to_ratePage"
+            app:destination="@id/ratePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/aiPage"
+        android:name="com.example.groupprojectapp2.AiPage"
+        android:label="fragment_ai_page"
+        tools:layout="@layout/fragment_ai_page" >
+        <action
+            android:id="@+id/action_aiPage_to_ratePage"
+            app:destination="@id/ratePage" />
+        <action
+            android:id="@+id/action_aiPage_to_alertPage"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_aiPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_aiPage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_aiPage_to_profilePage"
+            app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_aiPage_to_profileTestPage3"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertPage"
+        android:name="com.example.groupprojectapp2.AlertPage"
+        android:label="fragment_alert_page"
+        tools:layout="@layout/fragment_alert_page" >
+        <action
+            android:id="@+id/action_alertPage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_alertPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_alertPage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_alertPage_to_ratePage"
+            app:destination="@id/ratePage" />
+        <action
+            android:id="@+id/action_alertPage_to_profilePage"
+            app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_alertPage_to_profileTestPage2"
+            app:destination="@id/profileTestPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.example.groupprojectapp2.profilePage"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" >
+        <action
+            android:id="@+id/action_profilePage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_profilePage_to_alertPage"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_profilePage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_profilePage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_profilePage_to_ratePage"
+            app:destination="@id/ratePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockInfoPage"
+        android:name="com.example.groupprojectapp2.stockInfoPage"
+        android:label="fragment_stock_info_page"
+        tools:layout="@layout/fragment_stock_info_page" >
+        <action
+            android:id="@+id/action_stockInfoPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileTestPage"
+        android:name="com.example.groupprojectapp2.profileTestPage"
+        android:label="fragment_profile_test_page"
+        tools:layout="@layout/fragment_profile_test_page" >
+        <action
+            android:id="@+id/action_profileTestPage_to_cryptoPage"
+            app:destination="@id/cryptoPage" />
+        <action
+            android:id="@+id/action_profileTestPage_to_aiPage"
+            app:destination="@id/aiPage" />
+        <action
+            android:id="@+id/action_profileTestPage_to_alertPage"
+            app:destination="@id/alertPage" />
+        <action
+            android:id="@+id/action_profileTestPage_to_helpPage"
+            app:destination="@id/helpPage" />
+        <action
+            android:id="@+id/action_profileTestPage_to_ratePage"
+            app:destination="@id/ratePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/allAssetsPage"
+        android:name="com.example.groupprojectapp2.allAssetsPage"
+        android:label="fragment_all_assets_page"
+        tools:layout="@layout/fragment_all_assets_page" />
+</navigation>
